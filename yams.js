@@ -9,6 +9,16 @@ function yams(dices_roll) {
             return;
         }
 
+        if(
+            rolls[0]+1 == rolls[1]
+            && rolls[1]+1 == rolls[2]
+            && rolls[2]+1 == rolls[3]
+            && rolls[3]+1 == rolls[4]
+            ) {
+                total_sum += 40;
+                return;
+        }
+
         // total_sum += rolls.reduce((a, b) => a + b, 0);
     });
 
