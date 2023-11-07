@@ -22,14 +22,14 @@ function yams(dices_roll) {
         if(
             (
                 rolls[0] == rolls[1]
-                && rolls[2] == rolls[3]
                 && rolls[1] == rolls[2]
+                && rolls[2] == rolls[3]
                 && rolls[3] != rolls[4]
             ) ||
             (
                 rolls[0] != rolls[1]
-                && rolls[2] == rolls[3]
                 && rolls[1] == rolls[2]
+                && rolls[2] == rolls[3]
                 && rolls[3] == rolls[4]
             )
         ) {
@@ -37,7 +37,27 @@ function yams(dices_roll) {
             return;
         }
 
-        // total_sum += rolls.reduce((a, b) => a + b, 0);
+        if(
+            (
+                rolls[0] == rolls[1]
+                && rolls[1] == rolls[2]
+                && rolls[2] == rolls[3]
+                && rolls[3] != rolls[4]
+                && rolls[4] == rolls[5]
+            ) ||
+            (
+                rolls[0] == rolls[1]
+                && rolls[1] != rolls[2]
+                && rolls[2] == rolls[3]
+                && rolls[3] == rolls[4]
+                && rolls[4] == rolls[5]
+            )
+        ) {
+            total_sum += 30;
+            return;
+        }
+
+        total_sum += rolls.reduce((a, b) => a + b, 0);
     });
 
     return total_sum;

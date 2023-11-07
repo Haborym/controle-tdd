@@ -24,3 +24,7 @@ test('Petite suite invert = 35', () => {
 test('Yams + Petite suite = 85', () => {
     expect(yams([[1,1,1,1,1],[4,5,5,5,5]])).toBe(85);
 });
+
+test('Brelan = 30', () => {
+    expect(yams([[1,1,3,3,3]])).toBe(30);
+});
