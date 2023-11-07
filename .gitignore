@@ -1,0 +1,6 @@
+/coverage
+/node_modules
+jest.config.js
+dices.js
+package-lock.json
+package.json
