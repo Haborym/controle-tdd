@@ -1,11 +1,7 @@
 function yams(dices_roll) {
-    return true;
-}
+    let total_sum = 0;
 
-function generateDiceRolls() {
-    return [...Array(5)].map(_=>(([...Array(5)].map(_=>Math.ceil(Math.random()*5)+1))))
+    return total_sum;
 }
 
 module.exports = yams;
-
-module.exports = generateDiceRolls;
