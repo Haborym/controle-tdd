@@ -1,7 +1,7 @@
 const generateDiceRolls = require('./dices')
 const yams = require('./yams')
 
-test('Should return 0', () => {
-
-    expect(yams(generateDiceRolls())).toBe(0);
+test('Yams = 50', () => {
+    expect(yams([[1,1,1,1,1]])).toBe(50);
 });
+
