@@ -19,6 +19,24 @@ function yams(dices_roll) {
                 return;
         }
 
+        if(
+            (
+                rolls[0] == rolls[1]
+                && rolls[2] == rolls[3]
+                && rolls[1] == rolls[2]
+                && rolls[3] != rolls[4]
+            ) ||
+            (
+                rolls[0] != rolls[1]
+                && rolls[2] == rolls[3]
+                && rolls[1] == rolls[2]
+                && rolls[3] == rolls[4]
+            )
+        ) {
+            total_sum += 35;
+            return;
+        }
+
         // total_sum += rolls.reduce((a, b) => a + b, 0);
     });
 
